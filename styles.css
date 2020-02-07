@@ -1,0 +1,121 @@
+body{
+    text-align: left;
+    background-color: #232323;
+    color: white;
+}
+/* HEADER SECTION */
+#header a, .link-1 a,.link-2 a {
+    text-decoration: none;
+    color: white;
+}
+#header a:hover, .link-1 a:hover,.link-2 a:hover {
+    opacity: 0.5;
+}
+#header h1{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin: 5px 0 0 10px;
+}
+.headline{
+    display: inline-block;
+    position: relative;
+    left: 343px;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+}
+#header .link-buttons{
+    display: inline-block;
+    left: 700px;
+    bottom: 10px;
+    position: relative;
+    text-align: right;
+}
+
+/* MID SECTION */
+#mid-section {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1516828848398-e04c82e9205a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80");
+}
+#mid-section p, #skills .divider{
+    margin: 80px 0 60px 0;
+    font-size: 1.3rem;
+}
+#mid-section .divider, #skills .divider{
+    margin-top: 8px;
+}
+/* CONTACT SECTION */
+#contact {
+    color: #232323;
+    background-position: center;
+    background-repeat: repeat-y;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1558382075-9438374d7c07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+#contact h3{
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+#contact a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 20px 0 20px;
+    color: black;
+}
+#contact p{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#footer{
+    text-align: right;
+    position: relative;
+    right: 320px;
+    bottom: 7px;
+}
+#skills{
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    margin-top: 20px;
+}
+#skills h3{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 5px;
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width : 320px) and (max-width : 480px){
+    #header{
+        text-align: center;
+     }
+     .headline{
+        display: none;
+    }
+    #header .link-buttons{
+        position: static;
+        text-align: center;
+        margin: 10px 0 0 10px;
+    }
+    body{
+        background-position: center;
+    }
+    #mid-section {
+        background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1516828848398-e04c82e9205a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80");
+        display: inline-block;
+        margin-left:90px ;
+        margin-top: 0;
+    }
+    #mid-section .divider{
+        position: relative;
+        bottom: 25px;
+    }
+    #contact a{
+        margin: 15px 20px 0 5px;
+    }
+    #footer{
+        right: 120px;
+    }
+}
